@@ -121,8 +121,8 @@ class HTTPResponse:
 
 
 if __name__ == "__main__":
-    raw = """GET /jetebaise HTTP/1.1\r\nHost: toto\r\nUser-Agent: bite\r\n\r\nbody"""
-    raw = """HTTP/1.1 200 OK\r\nHost: toto\r\nUser-Agent: bite\r\n\r\nbody"""
+    raw = """GET /test HTTP/1.1\r\nHost: hypertest\r\nUser-Agent: supertest\r\n\r\nbody"""
+    raw = """HTTP/1.1 200 OK\r\nHost: hypertest\r\nUser-Agent: supertest\r\n\r\nbody"""
 
     h = HTTPResponse(raw.encode())
     h.headers["tttt"] = "toooot"
